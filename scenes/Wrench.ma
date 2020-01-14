@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Wrench.ma
-//Last modified: Tue, Jan 14, 2020 11:36:27 AM
+//Last modified: Tue, Jan 14, 2020 11:58:21 AM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -83,14 +83,25 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.38993456959724426 0.375 ;
+	setAttr ".pv" -type "double2" 0.75 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[44:51]" -type "float3"  0 0 -0.15150091 0 0 0.15150091 
-		0 0 0.15150091 0 0 -0.15150091 0 0 0.3901369 0 0 -0.3901369 0 0 -0.3901369 0 0 0.3901369;
+	setAttr -s 12 ".pt";
+	setAttr ".pt[28]" -type "float3" -0.277852 0 0 ;
+	setAttr ".pt[29]" -type "float3" -0.277852 0 0 ;
+	setAttr ".pt[32]" -type "float3" -0.277852 0 0 ;
+	setAttr ".pt[33]" -type "float3" -0.277852 0 0 ;
+	setAttr ".pt[44]" -type "float3" 0 0 -0.15150091 ;
+	setAttr ".pt[45]" -type "float3" 0 0 0.15150091 ;
+	setAttr ".pt[46]" -type "float3" 0 0 0.15150091 ;
+	setAttr ".pt[47]" -type "float3" 0 0 -0.15150091 ;
+	setAttr ".pt[48]" -type "float3" 0 0 0.3901369 ;
+	setAttr ".pt[49]" -type "float3" 0 0 -0.3901369 ;
+	setAttr ".pt[50]" -type "float3" 0 0 -0.3901369 ;
+	setAttr ".pt[51]" -type "float3" 0 0 0.3901369 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "93C820CE-41FF-7F59-68AB-BE8DE26550E4";
