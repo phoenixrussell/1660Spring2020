@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Tractor004.ma
-//Last modified: Mon, Feb 24, 2020 06:29:25 PM
+//Last modified: Mon, Feb 24, 2020 06:30:20 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "ECAC486C-4C38-2081-1501-23B53EA536D0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 32.020792823452688 7.3815111307041672 50.631836617361287 ;
+	setAttr ".t" -type "double3" 32.020792823444296 7.3815111307063335 50.631836617341115 ;
 	setAttr ".r" -type "double3" 5.6616471820919818 -697.39999999989004 -2.1531896409601984e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC3AA2E2-4A09-2F3C-E7F0-34AF07C64411";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 79.765723376994501;
+	setAttr ".coi" 79.765723376972502;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
