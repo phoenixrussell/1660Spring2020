@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Jigglypuff.ma
-//Last modified: Wed, Mar 25, 2020 10:31:52 PM
+//Last modified: Thu, Mar 26, 2020 09:26:14 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "6D2AC8E8-4784-0D05-E86D-A5897BC9B601";
+fileInfo "UUID" "8767F955-4F03-08FC-EF82-7380CD62822E";
 createNode transform -s -n "persp";
 	rename -uid "560EECB7-4064-7A62-0CA6-948FEB3EE0F2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.30600141123374802 8.1154833261437496 22.051790879739155 ;
-	setAttr ".r" -type "double3" -11.738352729716597 -0.20000000000048174 3.727235224932544e-17 ;
+	setAttr ".t" -type "double3" -4.8323902475295872 8.3438165278120948 21.511356036446482 ;
+	setAttr ".r" -type "double3" -12.338352729713181 -12.200000000000127 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E06176C6-4C71-2DCF-B7B7-0D8ECD5A671B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.294612714823131;
+	setAttr ".coi" 22.294612714822975;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
