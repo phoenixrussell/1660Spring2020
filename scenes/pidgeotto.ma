@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: pidgeotto.ma
-//Last modified: Wed, Apr 15, 2020 09:53:34 AM
+//Last modified: Wed, Apr 15, 2020 10:08:17 AM
 //Codeset: 1252
 requires maya "2020";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
-fileInfo "UUID" "416F54AD-4D7C-40F3-52BF-8B8E379884FE";
+fileInfo "UUID" "20A84C97-4FAD-DC6F-0010-39B248165E9A";
 createNode transform -s -n "persp";
 	rename -uid "8AF124A1-4626-934E-E5BF-6B81BFBADDD8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.7411489596234002 17.834268243466227 -11.08692848156069 ;
-	setAttr ".r" -type "double3" -36.938352729980494 2312.9999999995321 0 ;
+	setAttr ".t" -type "double3" 11.699690927567341 11.211814519454279 13.367474119631662 ;
+	setAttr ".r" -type "double3" -10.5383527300075 2205.7999999994199 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BB97D127-443B-CF89-B388-ABABE4D66ED5";
 	setAttr -k off ".v" no;
